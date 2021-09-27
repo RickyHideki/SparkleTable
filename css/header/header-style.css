@@ -1,0 +1,7 @@
+header {
+    background-color: var(--background-cor-header);
+}
+
+.header__contato--imagem {
+    width: 50px;
+}

@@ -1,0 +1,13 @@
+.tabela{
+    text-align: center;
+}
+
+.tabela__titulos {
+    border: solid var(--detalhes-cor) 3px;
+    background-color: var(--background-cor-header);
+}
+
+.tabela__textos {
+    border: solid var(--detalhes-cor) 2px;
+    text-align: center;
+}

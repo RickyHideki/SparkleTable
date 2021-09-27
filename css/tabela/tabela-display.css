@@ -1,0 +1,14 @@
+.tabela__calculos {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.tabela{
+    justify-content: center;
+}
+
+.tabela__item { padding: .5rem; }
+
+.tabela__totais .tabela__item { padding: 1rem 2.5rem; }

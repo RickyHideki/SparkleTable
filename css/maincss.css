@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+@import url(essentials/reset.css);
+@import url(header/header-style.css);
+@import url(header/header-display.css);
+
+@import url(essentials/textos/texto-titulo.css);
+@import url(essentials/textos/texto-normal.css);
+
+@import url(main-textos/titulo-principal.css);
+@import url(main-textos/esconder.css);
+
+@import url(tabela/tabelas-display.css);
+@import url(tabela/tabela-display.css);
+@import url(tabela/tabela-style.css);
+
+@import url(forms/forms-display.css);
+
+:root {
+    --font: 'Roboto Mono', monospace;
+    
+    --titulo-peso: 500;
+    --texto-peso: 300;
+
+    --titulo-tamanho: 3rem;
+    --texto-tamanho: 2rem;
+
+    --background-cor-header: #bbcfbb;
+    --background-cor: #E3FCEA;
+
+    --background-cor-header-escuro: #738076;
+    --background-cor-escuro: #8c9c8c;
+
+    --detalhes-cor: black;
+    --detahles-cor-escuro: white;
+}
+
+html {
+    font-family: var(--font);
+    background-color: var(--background-cor);
+}

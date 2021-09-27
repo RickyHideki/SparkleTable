@@ -1,0 +1,4 @@
+.texto-normal {
+    font-weight: var(--texto-peso);
+    font-size: var(--texto-tamanho);
+}

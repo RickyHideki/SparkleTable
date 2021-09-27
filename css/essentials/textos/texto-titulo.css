@@ -1,0 +1,6 @@
+.texto-titulo {
+    font-weight: var(--titulo-peso);
+    font-size: var(--titulo-tamanho);
+}
+
+.texto-titulo-escuro { color: white; }

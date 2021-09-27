@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/maincss.css">
+    <title>Sparkle Table</title>
+</head>
+<body>
+    <header>
+        <h1 class="header__titulo texto-titulo">Sparkle Table</h1>
+        <a href="#" class="header__contato"><img src="images/contato-icon.png" alt="Entrar em contato" class="header__contato--imagem"></a>
+    </header>
+    <main>
+        <p class="texto-titulo titulo-principal"> Tabela de Orçamento </p>
+        <section class="tabelas">
+            <table class="tabela tabela__receitas">
+                <thead>
+                    <tr>
+                        <th class="tabela__item tabela__titulos texto-normal">Receita Descrição</th>
+                        <th class="tabela__item tabela__titulos texto-normal">Receita (R$)</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaReceita">
+
+                </tbody>
+            </table>
+    
+            <table class="tabela tabela__despesas">
+                <thead>
+                    <tr>
+                        <th class="tabela__item tabela__titulos texto-normal">Despesas Descrição</th>
+                        <th class="tabela__item tabela__titulos texto-normal">Despesas (R$)</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaDespesas">
+
+                </tbody>
+            </table>
+        </section>
+
+        <section class="forms">
+            <form class="form form__receita" id="formReceita">
+                <label class="form__item texto-normal" for="receitaDecricao">Insira descrição:</label>
+                <input class="form__input texto-normal" id="receitaDecricao" name="Descricao" placeholder="Insira a descrição da receita" required="required">
+
+                <label class="form__item texto-normal" for="receita">Insira a receita:</label>
+                <input class="form__input texto-normal" id="receita" name="RD" type="number" placeholder="Insira a quantia da receita" required="required">
+
+                <button class="form__button texto-normal" id="buttonReceita">Adicionar</button>
+            </form>
+
+            <form class="form form__despesas" id="formDespesa">
+                <label class="form__item texto-normal" for="despesasDescricao">Insira a descrição:</label>
+                <input class="form__input texto-normal" id="despesasDescricao" name="Descricao" placeholder="Insira a descrição da despesa" required="required">
+
+                <label class="form__item texto-normal" for="despesas">Insira a despesa:</label>
+                <input class="form__input texto-normal" id="despesas" name="RD" type="number" placeholder="Insira a quantia da despesa" required="required">
+
+                <button class="form__button texto-normal" id="buttonDespesa">Adicionar</button>
+            </form>
+        </section>
+
+        <section class="tabela__calculos">
+            <table class="tabela tabela__totais">
+                <thead>
+                    <tr>
+                        <th class="tabela__item tabela__titulos texto-titulo">Receitas Total</th>
+                        <th class="tabela__item tabela__titulos texto-titulo">Despesas Total</th>
+                        <th class="tabela__item tabela__titulos texto-titulo">Saldo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tabela__item tabela__textos texto-titulo" id="receitasTotal"></td>
+                        <td class="tabela__item tabela__textos texto-titulo" id="despesasTotal"></td>
+                        <td class="tabela__item tabela__textos texto-titulo" id="saldo"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="javaScript/global-functions.js"></script>
+    <script src="javaScript/calculos.js"></script>
+    <script src="javaScript/adicionar-receita.js"></script>
+    <script src="javaScript/adicionar-despesa.js"></script>
+</body>
+</html>
